@@ -5,255 +5,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfolio of Amr Khaled (0xV01D-19), Cyber Security Specialist and Penetration Tester.">
-    <title>Amr Khaled | Cyber Security Specialist</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <!-- Google Fonts for Tech/Hacker Vibe -->
+        content="Portfolio of Amr Khaled, a Software Engineer and Computer Science Student at Mansoura University.">
+    <title>Amr Khaled | Aspiring Software Engineer</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;700&family=Share+Tech+Mono&family=Inter:wght@400;600;800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap"
         rel="stylesheet">
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Font Awesome for Icons (using CDN for simplicity) -->
+    <!-- FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- Matrix Background Canvas -->
-    <canvas id="matrix-bg"></canvas>
-
-    <!-- Overlay content -->
-    <div class="overlay">
-        <!-- Navigation -->
-        <nav class="navbar">
-            <div class="logo">&lt;0xV01D-19/&gt;</div>
+    <canvas id="matrix"></canvas>
+    <header id="header">
+        <nav class="navbar container">
+            <div class="logo">0xV01D-19</div>
             <ul class="nav-links">
-                <li><a href="#hero">~/Home</a></li>
-                <li><a href="#about">./About</a></li>
-                <li><a href="#skills">./Skills</a></li>
-                <li><a href="#projects">./Projects</a></li>
-                <li><a href="#contact">./Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+                <i class="fas fa-bars"></i>
             </div>
         </nav>
+        <div class="mobile-nav">
+            <i class="fas fa-times close-nav"></i>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
+    <main>
         <!-- Hero Section -->
         <section id="hero" class="hero-section">
-            <div class="hero-content">
-                <p class="terminal-prompt">root@amr:~$ <span class="typing-effect">init_sequence_0x1.sh</span></p>
-                <h1 class="glitch-text" data-text="Amr Khaled">Amr Khaled</h1>
-                <h2 class="subtitle">Cyber Security Specialist <span class="accent">||</span> Penetration Testing</h2>
-                <p class="intro-text">
-                    Cyber security student with a strong passion for penetration testing and ethical hacking.
-                    Driven by curiosity to understand how systems work and how vulnerabilities can be discovered and
-                    secured.
+            <div class="container">
+                <p class="hero-intro"> > Initializing session...</p>
+                <h1 class="hero-name">Amr_Khaled <span class="hacker-alias">-0xV01D-19-</span></h1>
+                <h2 class="hero-subtitle">Cyber Security Student & Penetration Tester.</h2>
+                <p class="hero-description">
+                    I'm a Freshman student at the Faculty of Computers and Informatics, Mansoura University.
+                    I focus on Penetration Testing, Secure Coding, and hardening Systems against vulnerabilities.
                 </p>
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn primary-btn">[ VIEW PROJECTS ]</a>
-                    <a href="#contact" class="btn secondary-btn">[ CONTACT ME ]</a>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">Execute Programs</a>
                 </div>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="section">
-            <h2 class="section-title">> whoami</h2>
-            <div class="about-container">
-                <div class="about-text">
-                    <p>I am <strong>Amr Khaled</strong>, also known as <span class="accent">0xV01D-19</span>, a student
-                        at the <strong>Faculty of Computers and Information, Mansoura University</strong>. I specialize
-                        in Cyber Security, with a primary focus on Penetration Testing.</p>
-                    <br>
-                    <p>From an early age, I’ve been deeply interested in understanding how systems operate internally. I
-                        enjoy analyzing applications, breaking them down, and identifying weaknesses from an attacker’s
-                        perspective. I believe that strong security starts with a deep technical understanding,
-                        continuous learning, and hands-on experimentation.</p>
-                </div>
-                <!-- Profile Image / Avatar Placeholder using FontAwesome if no image provided -->
-                <div class="about-avatar">
-                    <div class="hacker-avatar-frame">
-                        <div class="avatar-inner">
-                            <img src="profile.jpg" alt="Amr Khaled" class="profile-img">
-                            <div class="scanline"></div>
+            <div class="container">
+                <h2 class="section-title"><span>01.</span> /whoami</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Hello! My name is Amr. I enjoy breaking things to make them stronger. My journey into
+                            ethical hacking started when I became fascinated by how systems work under the hood.
+                        </p>
+                        <p>
+                            I am currently a student at <strong>Mansoura University </strong>, dedicating my time
+                            to mastering network security, operating systems internals, and offensive security
+                            techniques.
+                        </p>
+                        <p>
+                            My goal is to protect digital assets by identifying weaknesses before malicious actors can
+                            exploit them.
+                        </p>
+                    </div>
+                    <div class="about-img">
+                        <!-- Cyber themed placeholder -->
+                        <div class="img-wrapper">
+                            <img src="me.png" alt="Amr Khaled" class="profile-pic">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Experience Section -->
-        <section id="experience" class="section">
-            <h2 class="section-title">> cat experience.log</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <span class="date">2024 – Present</span>
-                    <h3>Self-Taught Cyber Security Student</h3>
-                    <h4>Mansoura University</h4>
-                    <ul>
-                        <li>Actively studying cyber security and penetration testing concepts through self-study and
-                            hands-on practice.</li>
-                        <li>Building foundational knowledge in programming, web technologies, and Linux environments.
-                        </li>
-                        <li>Continuously improving technical skills through real-world experimentation.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
         <!-- Skills Section -->
         <section id="skills" class="section">
-            <h2 class="section-title">> ls -la /skills</h2>
-            <div class="skills-grid">
-                <!-- Programming Languages -->
-                <div class="skill-category">
-                    <h3><i class="fa-solid fa-code"></i> Languages</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">C#</span>
-                        <span class="tag">C++</span>
-                        <span class="tag">JavaScript</span>
+            <div class="container">
+                <h2 class="section-title"><span>02.</span> System Capabilities</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-terminal"></i> Systems & Operations</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Linux (Ubuntu)</span>
+                            <span class="skill-tag">Windows Fundamentals</span>
+                            <span class="skill-tag">Advanced CLI</span>
+                            <span class="skill-tag">Bash Scripting</span>
+                        </div>
                     </div>
-                </div>
-                <!-- Web Technologies -->
-                <div class="skill-category">
-                    <h3><i class="fa-solid fa-globe"></i> Web Tech</h3>
-                    <div class="skill-tags">
-                        <span class="tag">HTML</span>
-                        <span class="tag">CSS</span>
-                        <span class="tag">JavaScript</span>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-network-wired"></i> Networking</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Network Basics</span>
+                            <span class="skill-tag">TCP/IP</span>
+                            <span class="skill-tag">OSI Model</span>
+                            <span class="skill-tag">Packet Analysis</span>
+                        </div>
                     </div>
-                </div>
-                <!-- OS -->
-                <div class="skill-category">
-                    <h3><i class="fa-brands fa-linux"></i> OS</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Ubuntu Linux</span>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Programming</h3>
+                        <div class="skill-list">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">C#</span>
+                            <span class="skill-tag">JavaScript/Node.js</span>
+                            <span class="skill-tag">HTML/CSS/SQL</span>
+                        </div>
                     </div>
-                </div>
-                <!-- Security Focus -->
-                <div class="skill-category">
-                    <h3><i class="fa-solid fa-shield-halved"></i> Security Focus</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Penetration Testing</span>
-                        <span class="tag">Cyber Security Fundamentals</span>
-                        <span class="tag">Vulnerability Analysis</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="section">
-            <h2 class="section-title">> ./services --list</h2>
-            <div class="cards-grid">
-                <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-bug"></i></div>
-                    <h3>Penetration Testing</h3>
-                    <p>Testing systems for vulnerabilities and security weaknesses.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-                    <h3>Vulnerability Assessment</h3>
-                    <p>Analyzing and reporting potential security risks.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fa-brands fa-linux"></i></div>
-                    <h3>Linux Security Tools</h3>
-                    <p>Utilizing Linux-based tools for security auditing.</p>
-                </div>
-                <div class="card">
-                    <div class="card-icon"><i class="fa-solid fa-lock"></i></div>
-                    <h3>Web App Security</h3>
-                    <p>Understanding and securing web application fundamentals.</p>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
         <section id="projects" class="section">
-            <h2 class="section-title">> ./projects_launcher</h2>
-            <div class="cards-grid">
-                <div class="card project-card">
-                    <h3>Web Fundamentals Website</h3>
-                    <p>A beginner-level website built during my web development learning journey using core web
-                        technologies (HTML, CSS, and JavaScript).</p>
-                    <a href="https://v01d19.github.io/Portfolio-19/" target="_blank" class="btn link-btn"><i
-                            class="fa-brands fa-github"></i>
-                        GitHub Repository</a>
-                </div>
-                <div class="card project-card">
-                    <h3>Web Scanner to Detect Phishing Links.</h3>
-                    <p>Advanced URL scanner for maximum web safety, identifying phishing threats before they compromise
-                        your data.</p>
-                    <a href="https://v01d19.github.io/Sentinel-AI/" target="_blank" class="btn link-btn"><i
-                            class="fa-solid fa-shield-halved"></i>
-                        Visit Sentinel AI</a>
-                </div>
-                <div class="card project-card">
-                    <h3>Senior Backend Developer Portfolio</h3>
-                    <p>A professional, responsive portfolio designed for a Senior Backend Developer. Features a dark
-                        mode, responsive layout, and a clean professional aesthetic.</p>
-                    <a href="https://v01d19.github.io/portfolio.mo/" target="_blank" class="btn link-btn"><i
-                            class="fa-solid fa-globe"></i>
-                        Visit Portfolio</a>
-                </div>
-                <div class="card project-card">
-                    <h3>Planned Penetration Testing Tools</h3>
-                    <p>Future projects focused on developing custom security tools and utilities to support penetration
-                        testing workflows.</p>
-                    <span class="status-badge">COMING SOON</span>
+            <div class="container">
+                <h2 class="section-title"><span>03.</span> Security Tools</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-shield-alt folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Python Port Scanner</h3>
+                        <div class="project-desc">
+                            <p>A multi-threaded port scanner built in Python. Identifies open ports and banners to
+                                assist in network reconnaissance phases.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Python</li>
+                            <li>Sockets</li>
+                            <li>Threading</li>
+                        </ul>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-network-wired folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">Packet Analyzer</h3>
+                        <div class="project-desc">
+                            <p>A tool to capture and analyze network traffic. filters packets based on protocols and
+                                flags to detect suspicious activity.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Python</li>
+                            <li>Scapy</li>
+                            <li>Networking</li>
+                        </ul>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-lock folder-icon"></i>
+                            <div class="project-links">
+                                <a href="#" aria-label="GitHub Link"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                        <h3 class="project-title">File Integrity Checker</h3>
+                        <div class="project-desc">
+                            <p>A script that calculates and verifies file hashes (MD5/SHA-256) to detect unauthorized
+                                changes in critical system files.</p>
+                        </div>
+                        <ul class="project-tech-list">
+                            <li>Python</li>
+                            <li>Cryptography</li>
+                            <li>File I/O</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact" class="section">
-            <h2 class="section-title">> connect_remote_host</h2>
-            <div class="contact-container">
-                <div class="contact-info hacker-frame">
-                    <div class="contact-inner">
-                        <h3>Let's Collaborate</h3>
-                        <p>Interested in working together or discussing security? Ping me.</p>
-                        <!-- "Send Signal" Button converted to mailto link -->
-                        <a href="mailto:khaleded75215@gmail.com" class="btn primary-btn email-btn">
-                            <i class="fa-solid fa-envelope"></i> Send Signal
-                        </a>
-                        <div class="scanline"></div>
-                    </div>
-                </div>
+            <div class="container contact-container">
+                <h2 class="section-title center-title"><span>04.</span> Uplink</h2>
+                <h2 class="big-title">Establish Connection</h2>
+                <p class="contact-desc">
+                    I'm currently looking for internships and opportunities in Cyber Security. If you have a challenge
+                    or a question, my inbox is open.
+                </p>
+                <a href="mailto:khaleded75215@gmail.com" class="btn btn-primary big-btn" id="myEdit">Send Signal</a>
             </div>
         </section>
+    </main>
 
-        <!-- Footer -->
-        <footer>
+    <footer class="footer">
+        <div class="container">
             <div class="social-links">
-                <!-- Facebook -->
-                <a href="https://www.facebook.com/amr.khaled.430811" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/amr-khaled-6bbb0625a/" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <!-- X (Twitter) -->
-                <a href="https://x.com/amrkhaled733091" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-                <!-- Instagram (Added per previous convo context, usually requested together, though specific URL wasn't in main prompt, I will add placeholder or omit based on prompt. Prompt said 'Contact & Social Links' contained FB, LI, X. I will stick to those to be safe, but the summary mentioned Instagram. I will add it if I have a link, otherwise I will stick to provided links to avoid dead links. User provided FB, LI, X. I will stick to these.) -->
+                <a href="https://www.instagram.com/___3mrr__/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/amr.khaled.430811" target="_blank" rel="noopener noreferrer"
+                    aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/amr-khaled-6bbb0625a/" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://x.com/amrkhaled733091" target="_blank" rel="noopener noreferrer"
+                    aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
             </div>
-            <p class="copyright">
-                &copy; 2025 Amr Khaled [0xV01D-19]. All Systems Operational.
-            </p>
-        </footer>
-    </div>
+            <p>Designed & Built by Amr Khaled</p>
+        </div>
+    </footer>
 
-    <!-- Main Script -->
     <script src="script.js"></script>
 </body>
 
